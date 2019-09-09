@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-
+#import "MediaFind/MedianFind.h"
 @interface AppDelegate ()
 
 @end
@@ -17,6 +17,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    int list[9] = {12,3,10,8,6,7,11,13,9};
+    int median = findMedian(list, 9);
+    printf("the median is  %d \n",median);
     return YES;
 }
 
